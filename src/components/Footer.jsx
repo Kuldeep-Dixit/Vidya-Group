@@ -19,7 +19,16 @@ export default function Footer() {
           <ul>
             <li>
               <Link to="/solar">
-                Solar Services
+                Vidya Solar Services
+              </Link> <br />
+              <Link to="#">
+                Vidya Mess
+              </Link><br />
+              <Link to="#">
+                Vidya Boys Hostel
+              </Link><br />
+              <Link to="#">
+                Vidya Library
               </Link>
             </li>
           </ul>
@@ -46,7 +55,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <span>
-          © 2024 Vidya Groups
+          © 2026 Vidya Groups
         </span>
 
         <span>

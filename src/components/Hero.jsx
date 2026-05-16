@@ -10,7 +10,7 @@ export default function Hero() {
 
       <div className="hero-content">
         <div className="hero-badge">
-          Ghaziabad ka Bharosa · Since 2018
+          Ghaziabad ka Bharosa · Since 2022
         </div>
 
         <h1>

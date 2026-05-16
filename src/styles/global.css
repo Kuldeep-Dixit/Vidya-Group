@@ -988,3 +988,95 @@
       .footer-grid { grid-template-columns: 1fr; }
       .calc-result-grid { grid-template-columns: 1fr; }
     }
+
+    .biz-card {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+button.biz-card {
+  appearance: none;
+}
+.biz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.biz-card {
+  width: 100%;
+  min-height: 280px;
+  padding: 36px;
+  border-radius: 24px;
+  border-left: 6px solid var(--accent-color);
+  background: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  border-top: 1px solid #dcefe3;
+  border-right: 1px solid #dcefe3;
+  border-bottom: 1px solid #dcefe3;
+}
+
+button.biz-card {
+  appearance: none;
+}
+
+.biz-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.biz-card-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.biz-card h3 {
+  font-size: 2rem;
+  margin-bottom: 14px;
+  color: #102418;
+}
+
+.biz-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5d8a6d;
+  margin-bottom: 28px;
+}
+
+.biz-card-link {
+  margin-top: auto;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+::selection {
+  background: #2d6a4f;
+  color: white;
+}
+
+::-moz-selection {
+  background: #2d6a4f;
+  color: white;
+}

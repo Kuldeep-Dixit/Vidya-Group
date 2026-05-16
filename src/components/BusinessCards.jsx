@@ -55,30 +55,59 @@ export default function BusinessCards() {
       </div>
 
       <div className="biz-grid">
-        {cards.map((card, index) => (
-          <Link
-            to={card.link || "#"}
-            key={index}
-            className="biz-card"
-            style={{
-              "--accent-color": card.color,
-              "--icon-bg": card.bg,
-            }}
-          >
-            <div className="biz-card-icon">
-              {card.icon}
-            </div>
+  {cards.map((card, index) => {
+    const isComingSoon =
+      !card.link;
 
-            <h3>{card.title}</h3>
+    const content = (
+      <>
+        <div className="biz-card-icon">
+          {card.icon}
+        </div>
 
-            <p>{card.desc}</p>
+        <h3>{card.title}</h3>
 
-            <span className="biz-card-link">
-              Aur Jaanein
-            </span>
-          </Link>
-        ))}
-      </div>
+        <p>{card.desc}</p>
+
+        <span className="biz-card-link">
+          {isComingSoon
+            ? "Coming Soon"
+            : "Aur Jaanein"}
+        </span>
+      </>
+    );
+
+    return isComingSoon ? (
+      <button
+        key={index}
+        className="biz-card"
+        style={{
+          "--accent-color": card.color,
+          "--icon-bg": card.bg,
+        }}
+        onClick={() =>
+          alert(
+            `${card.title} Coming Soon 🚀`
+          )
+        }
+      >
+        {content}
+      </button>
+    ) : (
+      <Link
+        to={card.link}
+        key={index}
+        className="biz-card"
+        style={{
+          "--accent-color": card.color,
+          "--icon-bg": card.bg,
+        }}
+      >
+        {content}
+      </Link>
+    );
+  })}
+</div>
     </section>
   );
 }
