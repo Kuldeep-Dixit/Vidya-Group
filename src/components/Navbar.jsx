@@ -1,51 +1,55 @@
-import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function Navbar() {
-  const [open, setOpen] = useState(false);
-  const location = useLocation();
+const NAV_ITEMS = [
+  { id: 'home',    label: 'Home' },
+  { id: 'solar',   label: '☀️ Solar' },
+  { id: 'hostel',  label: '🏠 Hostel' },
+  { id: 'mess',    label: '🍛 Mess' },
+  { id: 'library', label: '📚 Library' },
+];
+
+export default function Navbar({ activePage, setActivePage }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const go = (page) => {
+    setActivePage(page);
+    setMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
-    <nav className="nav">
-      <Link className="nav-logo" to="/">
-        <div className="nav-logo-icon">🌿</div>
-
+    <nav>
+      {/* Logo */}
+      <div className="nav-logo" onClick={() => go('home')}>
+        <div className="nav-logo-mark">🌿</div>
         <div className="nav-logo-text">
           Vidya Groups
-          <span>Ghaziabad, UP</span>
+          <small>Ghaziabad, UP</small>
         </div>
-      </Link>
+      </div>
 
-      <ul className={`nav-links ${open ? "open" : ""}`}>
-        <li>
-          <Link
-            className={location.pathname === "/" ? "active" : ""}
-            to="/"
-          >
-            Home
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            className={location.pathname === "/solar" ? "active" : ""}
-            to="/solar"
-          >
-            Solar Services
-          </Link>
-        </li>
-
-        <li>
-          <a href="tel:+919999999999" className="nav-cta">
-            📞 Call Now
-          </a>
-        </li>
+      {/* Nav Links */}
+      <ul className={`nav-center${menuOpen ? ' open' : ''}`}>
+        {NAV_ITEMS.map((item) => (
+          <li key={item.id}>
+            <a
+              className={activePage === item.id ? 'active' : ''}
+              onClick={() => go(item.id)}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <div className="hamburger" onClick={() => setOpen(!open)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      {/* Right side */}
+      <div className="nav-right">
+        <a href="tel:+919999999999" className="btn-call">
+          📞 <span>Call Karo</span>
+        </a>
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <span /><span /><span />
+        </button>
       </div>
     </nav>
   );

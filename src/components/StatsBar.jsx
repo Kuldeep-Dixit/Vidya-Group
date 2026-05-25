@@ -1,34 +1,17 @@
-export default function StatsBar() {
-  const stats = [
-    {
-      num: "500+",
-      label: "Students Served",
-    },
-    {
-      num: "200+",
-      label: "Solar Installations",
-    },
-    {
-      num: "6+",
-      label: "Years of Service",
-    },
-    {
-      num: "4",
-      label: "Businesses, Ek Brand",
-    },
-  ];
-
+/**
+ * StatsBar
+ *
+ * Props:
+ *  stats  – array of { num, label }
+ *  color  – optional CSS color for the number (default: var(--green-main))
+ */
+export default function StatsBar({ stats = [], color = 'var(--green-main)' }) {
   return (
     <div className="stats-bar">
-      {stats.map((item, index) => (
-        <div className="stat-item" key={index}>
-          <span className="stat-num">
-            {item.num}
-          </span>
-
-          <span className="stat-label">
-            {item.label}
-          </span>
+      {stats.map(({ num, label }) => (
+        <div key={label} className="stat-item">
+          <span className="stat-num" style={{ color }}>{num}</span>
+          <span className="stat-label">{label}</span>
         </div>
       ))}
     </div>
