@@ -20,7 +20,7 @@ const BIZ_CARDS = [
   },
   {
     id: 'hostel', icon: '🏠', logoClass: 'logo-hostel',
-    name: 'Vidya Hostel', sub: 'Boys Only',
+    name: 'Vidya Hostel', sub: 'Boys and Girls',
     accent: 'var(--hostel-color)', linkColor: 'var(--hostel-color)',
     desc:  'Clean, safe & affordable hostel for students near colleges in Ghaziabad. Single & double rooms available.',
     linkLabel: 'Hostel Dekhein',

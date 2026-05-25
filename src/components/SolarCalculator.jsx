@@ -56,9 +56,9 @@ export default function SolarCalculator() {
         <div className="calc-field">
           <label>Available Roof Space</label>
           <select value={roofspace} onChange={(e) => setRoofspace(e.target.value)}>
-            <option value="small">Small  (100–200 sqft)</option>
-            <option value="medium">Medium (200–400 sqft)</option>
-            <option value="large">Large  (400+ sqft)</option>
+            <option value="small">Small  (200–400 sqft)</option>
+            <option value="medium">Medium (400–600 sqft)</option>
+            <option value="large">Large  (600+ sqft)</option>
           </select>
         </div>
 

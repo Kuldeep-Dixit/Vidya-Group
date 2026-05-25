@@ -79,11 +79,11 @@ export default function Hostel() {
         <div style={{ position: 'absolute', inset: 0, opacity: .05, background: 'repeating-linear-gradient(-45deg,transparent,transparent 28px,rgba(116,198,157,1) 28px,rgba(116,198,157,1) 29px)' }} />
         <div style={{ position: 'absolute', right: '6%', top: '50%', transform: 'translateY(-50%)', width: 'min(320px,40vw)', height: 'min(320px,40vw)', borderRadius: '50%', background: 'radial-gradient(circle,rgba(64,145,108,.18) 0%,transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: 620, animation: 'fadeUp .75s ease both' }}>
-          <div className="hero-badge" style={{ marginBottom: 16 }}>🏠 College ke Paas · Sirf Boys</div>
+          <div className="hero-badge" style={{ marginBottom: 16 }}>🏠 College ke Paas · Boys & Girls</div>
           <div className="biz-logo logo-hostel" style={{ marginBottom: 18 }}>
             <div className="biz-logo-mark" style={{ width: 42, height: 42, fontSize: 22, background: 'var(--hostel-bg)' }}>🏠</div>
             <div className="biz-logo-name" style={{ color: '#a7f3d0', fontSize: 19 }}>
-              Vidya Boys Hostel
+              Vidya Boys & Girls Hostel
               <small style={{ color: 'rgba(255,255,255,0.4)' }}>Ghaziabad, UP</small>
             </div>
           </div>
@@ -91,11 +91,11 @@ export default function Hostel() {
             Your Home <em style={{ fontStyle: 'normal', color: '#6ee7b7' }}>Away From Home</em>
           </h1>
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.62)', lineHeight: 1.75, marginBottom: 28, maxWidth: 500 }}>
-            Boys ke liye safe, clean aur affordable hostel — college ke bilkul paas.
+            Boys & Girls ke liye safe, clean aur affordable hostel — college ke bilkul paas.
             Single aur double rooms, sab zaroori suvidhaon ke saath.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-            {['✓ WiFi Included','✓ RO Drinking Water','✓ 24×7 Security','✓ Mess Available','✓ Study Room'].map((b) => (
+            {['✓ WiFi Included','✓ RO Drinking Water','✓ 24×7 Security','✓ Mess Available','✓ Study Room', '✓ 24*7 Backup'].map((b) => (
               <span key={b} className="solar-badge">{b}</span>
             ))}
           </div>
@@ -128,9 +128,9 @@ export default function Hostel() {
             </div>
             <div style={{ padding: 24 }}>
               <div style={{ marginBottom: 20 }}>
-                <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹X,XXX</span>
+                <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹8,499</span>
                 <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
-                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>*Update with your actual price</p>
+                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included; Bijli Bill excluded</p>
               </div>
               <ul style={{ listStyle: 'none', marginBottom: 20 }}>
                 {SINGLE_FEATURES.map((f) => (
@@ -152,9 +152,9 @@ export default function Hostel() {
             </div>
             <div style={{ padding: 24 }}>
               <div style={{ marginBottom: 20 }}>
-                <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹X,XXX</span>
+                <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹7,999</span>
                 <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month per person</span>
-                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>*Update with your actual price</p>
+                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included; Bijli Bill excluded</p>
               </div>
               <ul style={{ listStyle: 'none', marginBottom: 20 }}>
                 {DOUBLE_FEATURES.map((f) => (

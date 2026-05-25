@@ -29,8 +29,8 @@ const WHY_MESS = [
 ];
 
 const MEAL_TIMES = [
-  { icon: '🌅', label: 'Breakfast', time: '7:00 – 9:00 AM',   sub: 'Start your day right',          highlight: false },
-  { icon: '☀️', label: 'Lunch',     time: '12:00 – 2:30 PM', sub: 'Full thali — most popular time', highlight: true  },
+  { icon: '🌅', label: 'Breakfast', time: '8:00 – 9:30 AM',   sub: 'Start your day right',          highlight: false },
+  { icon: '☀️', label: 'Lunch',     time: '12:00 – 2:00 PM', sub: 'Full thali — most popular time', highlight: true  },
   { icon: '🌙', label: 'Dinner',    time: '7:30 – 9:30 PM',   sub: 'Wind down with a warm meal',    highlight: false },
 ];
 
@@ -160,9 +160,9 @@ export default function Mess() {
             <div style={{ fontSize: 36, marginBottom: 12, marginTop: 8 }}>📅</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--mess-dark)', marginBottom: 8 }}>Monthly Plan</h3>
             <div style={{ margin: '16px 0' }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹X,XXX</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹3,999</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
-              <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p>
+              {/* <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p> */}
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
               {['Breakfast + Lunch + Dinner','All 7 days of the week','Sunday special meal','Best value for regulars'].map((f) => (
@@ -177,9 +177,9 @@ export default function Mess() {
             <div style={{ fontSize: 36, marginBottom: 12 }}>🍽️</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--mess-dark)', marginBottom: 8 }}>Daily / Per Meal</h3>
             <div style={{ margin: '16px 0' }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹XX</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹79</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/meal</span>
-              <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p>
+              {/* <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p> */}
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
               {['Pay per meal — no commitment','Choose any meal of the day','Walk-in welcome','Great for occasional visitors'].map((f) => (
@@ -256,7 +256,7 @@ export default function Mess() {
             <div style={{ background: 'var(--mess-bg)', border: '1px solid #f0c09a', borderRadius: 'var(--radius-sm)', padding: '14px 16px', marginTop: 10 }}>
               <p style={{ fontSize: 13, fontWeight: 600, color: 'var(--mess-dark)' }}>🍽️ Meal Timings (Quick Ref)</p>
               <ul style={{ listStyle: 'none', marginTop: 8 }}>
-                {[['🌅','Breakfast: 7:00 – 9:00 AM'],['☀️','Lunch: 12:00 – 2:30 PM'],['🌙','Dinner: 7:30 – 9:30 PM']].map(([em, t]) => (
+                {[['🌅','Breakfast: 8:00 – 9:30 AM'],['☀️','Lunch: 12:00 – 2:00 PM'],['🌙','Dinner: 7:30 – 9:30 PM']].map(([em, t]) => (
                   <li key={t} style={{ fontSize: 12, color: 'var(--text-muted)', padding: '3px 0' }}>{em} {t}</li>
                 ))}
               </ul>
