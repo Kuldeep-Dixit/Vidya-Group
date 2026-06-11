@@ -40,10 +40,10 @@ const PROJECTS = [
 ];
 
 const CONTACT_ITEMS = [
-  ['📞', '+91 99999 99999',              'Mon–Sat, 9am–7pm'          ],
-  ['💬', 'WhatsApp: +91 99999 99999',    '24/7 Available'            ],
+  ['📞', '+91 81784 53197',              'Mon–Sat, 9am–7pm'          ],
+  ['💬', 'WhatsApp: +91 81784 53197',    '24/7 Available'            ],
   ['📍', 'Vidya Groups Office, Ghaziabad, UP', 'Walk-in Welcome'     ],
-  ['✉️', 'info@vidyagroups.in',          '24 Ghante mein Reply'      ],
+  ['✉️', 'vidyasolarservice@gmail.com',          '24 Ghante mein Reply'      ],
 ];
 
 const CONTACT_FIELDS = [

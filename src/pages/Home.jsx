@@ -134,7 +134,7 @@ export default function Home({ setActivePage }) {
       <section className="cta-banner">
         <h2>Free Consultation — Koi Commitment Nahi</h2>
         <p>Solar ho ya student services — call karo ya WhatsApp karo, bilkul free.</p>
-        <a href="https://wa.me/919999999999" className="btn-primary">
+        <a href="https://wa.me/919599309008" className="btn-primary">
           💬 WhatsApp pe Baat Karo
         </a>
       </section>

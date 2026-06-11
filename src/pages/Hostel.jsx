@@ -47,8 +47,8 @@ const TESTIMONIALS = [
 const DOCS = ['Aadhaar Card (student)', 'College ID / Admission letter', "Parent's ID proof", '2 passport size photos'];
 
 const CONTACT_ITEMS = [
-  ['📞', '+91 99999 99999',                         'Mon–Sat, 9am–7pm'                   ],
-  ['💬', 'WhatsApp: +91 99999 99999',               '24/7 Available'                     ],
+  ['📞', '+91 99999 93069',                         'Mon–Sat, 9am–7pm'                   ],
+  ['💬', 'WhatsApp: +91 99999 93069',               '24/7 Available'                     ],
   ['📍', '[Your hostel address], Ghaziabad, UP',    'Walk-in visits welcome — Mon to Sat'],
 ];
 
@@ -79,11 +79,11 @@ export default function Hostel() {
         <div style={{ position: 'absolute', inset: 0, opacity: .05, background: 'repeating-linear-gradient(-45deg,transparent,transparent 28px,rgba(116,198,157,1) 28px,rgba(116,198,157,1) 29px)' }} />
         <div style={{ position: 'absolute', right: '6%', top: '50%', transform: 'translateY(-50%)', width: 'min(320px,40vw)', height: 'min(320px,40vw)', borderRadius: '50%', background: 'radial-gradient(circle,rgba(64,145,108,.18) 0%,transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: 620, animation: 'fadeUp .75s ease both' }}>
-          <div className="hero-badge" style={{ marginBottom: 16 }}>🏠 College ke Paas · Boys & Girls</div>
+          <div className="hero-badge" style={{ marginBottom: 16 }}>🏠 College ke Paas · Sirf Boys</div>
           <div className="biz-logo logo-hostel" style={{ marginBottom: 18 }}>
             <div className="biz-logo-mark" style={{ width: 42, height: 42, fontSize: 22, background: 'var(--hostel-bg)' }}>🏠</div>
             <div className="biz-logo-name" style={{ color: '#a7f3d0', fontSize: 19 }}>
-              Vidya Boys & Girls Hostel
+              Vidya Boys Hostel
               <small style={{ color: 'rgba(255,255,255,0.4)' }}>Ghaziabad, UP</small>
             </div>
           </div>
@@ -91,17 +91,17 @@ export default function Hostel() {
             Your Home <em style={{ fontStyle: 'normal', color: '#6ee7b7' }}>Away From Home</em>
           </h1>
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.62)', lineHeight: 1.75, marginBottom: 28, maxWidth: 500 }}>
-            Boys & Girls ke liye safe, clean aur affordable hostel — college ke bilkul paas.
+            Boys ke liye safe, clean aur affordable hostel — college ke bilkul paas.
             Single aur double rooms, sab zaroori suvidhaon ke saath.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-            {['✓ WiFi Included','✓ RO Drinking Water','✓ 24×7 Security','✓ Mess Available','✓ Study Room', '✓ 24*7 Backup'].map((b) => (
+            {['✓ WiFi Included','✓ RO Drinking Water','✓ 24×7 Security','✓ Mess Available','✓ Study Room'].map((b) => (
               <span key={b} className="solar-badge">{b}</span>
             ))}
           </div>
           <div className="hero-btns">
             <button className="btn-primary" onClick={scrollToRooms}>Rooms aur Fees Dekho ↓</button>
-            <a href="https://wa.me/919999999999?text=I%20want%20to%20enquire%20about%20Vidya%20Boys%20Hostel" className="btn-outline">
+            <a href="https://wa.me/919999993069?text=I%20want%20to%20enquire%20about%20Vidya%20Boys%20Hostel" className="btn-outline">
               💬 Visit Book Karo
             </a>
           </div>
@@ -130,14 +130,14 @@ export default function Hostel() {
               <div style={{ marginBottom: 20 }}>
                 <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹8,499</span>
                 <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
-                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included; Bijli Bill excluded</p>
+                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included * Electricity Bill excluded</p>
               </div>
               <ul style={{ listStyle: 'none', marginBottom: 20 }}>
                 {SINGLE_FEATURES.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '6px 0', borderBottom: '1px solid var(--border)', display: 'flex', gap: 8 }}>✅ {f}</li>
                 ))}
               </ul>
-              <a href="https://wa.me/919999999999?text=I%20want%20to%20enquire%20about%20Single%20Room%20in%20Vidya%20Hostel" style={{ display: 'block', background: 'var(--hostel-color)', color: 'white', textAlign: 'center', padding: 12, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 14 }}>
+              <a href="https://wa.me/919999993069?text=I%20want%20to%20enquire%20about%20Single%20Room%20in%20Vidya%20Hostel" style={{ display: 'block', background: 'var(--hostel-color)', color: 'white', textAlign: 'center', padding: 12, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 14 }}>
                 Enquire for Single Room
               </a>
             </div>
@@ -154,14 +154,14 @@ export default function Hostel() {
               <div style={{ marginBottom: 20 }}>
                 <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 32, fontWeight: 700, color: 'var(--hostel-color)' }}>₹7,999</span>
                 <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month per person</span>
-                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included; Bijli Bill excluded</p>
+                <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>* Mess included * Electricity Bill excluded</p>
               </div>
               <ul style={{ listStyle: 'none', marginBottom: 20 }}>
                 {DOUBLE_FEATURES.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '6px 0', borderBottom: '1px solid var(--border)', display: 'flex', gap: 8 }}>✅ {f}</li>
                 ))}
               </ul>
-              <a href="https://wa.me/919999999999?text=I%20want%20to%20enquire%20about%20Double%20Room%20in%20Vidya%20Hostel" style={{ display: 'block', background: 'var(--hostel-bg)', color: 'var(--hostel-dark)', textAlign: 'center', padding: 12, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 14, border: '2px solid var(--hostel-color)' }}>
+              <a href="https://wa.me/919999993069?text=I%20want%20to%20enquire%20about%20Double%20Room%20in%20Vidya%20Hostel" style={{ display: 'block', background: 'var(--hostel-bg)', color: 'var(--hostel-dark)', textAlign: 'center', padding: 12, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 14, border: '2px solid var(--hostel-color)' }}>
                 Enquire for Double Room
               </a>
             </div>
@@ -198,18 +198,57 @@ export default function Hostel() {
           <p>Ek student ko jo chahiye — sab kuch doorstep pe.</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, maxWidth: 860, margin: '0 auto', alignItems: 'start' }}>
+
+          {/* ── Map card ── */}
           <div>
-            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-              <div style={{ height: 200, background: 'linear-gradient(135deg,var(--hostel-bg),var(--green-pale))', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                <span style={{ fontSize: 40 }}>📍</span>
-                <p style={{ fontSize: 13, color: 'var(--text-muted)', textAlign: 'center', padding: '0 20px' }}>
-                  Vidya Boys Hostel<br />Ghaziabad, Uttar Pradesh
-                  <br /><br /><span style={{ fontSize: 11 }}>← Paste Google Maps embed here</span>
-                </p>
+            <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
+
+              {/* Google Maps iframe */}
+              <div style={{ position: 'relative', width: '100%', height: 260 }}>
+                <iframe
+                  title="Vidya Boys Hostel Location"
+                  src="https://maps.google.com/maps?q=28.6305498,77.4430479&z=18&output=embed"
+                  width="100%"
+                  height="260"
+                  style={{ border: 0, display: 'block' }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                {/* Branded pin overlay */}
+                <div style={{
+                  position: 'absolute', top: 12, left: 12,
+                  background: 'var(--hostel-color)', color: 'white',
+                  fontSize: 12, fontWeight: 600, padding: '5px 12px',
+                  borderRadius: 20, boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                  display: 'flex', alignItems: 'center', gap: 6,
+                  pointerEvents: 'none',
+                }}>
+                  🏠 Vidya Boys Hostel
+                </div>
               </div>
-              <div style={{ padding: 16 }}>
-                <p style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-dark)' }}>📍 Vidya Boys Hostel</p>
-                <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>[Your full address here], Ghaziabad, UP</p>
+
+              {/* Address strip */}
+              <div style={{ padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: 10, borderTop: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 18, marginTop: 2 }}>📍</span>
+                <div>
+                  <p style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-dark)' }}>Vidya Boys Hostel</p>
+                  <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 2 }}>
+                    [Your full address here], Ghaziabad, UP
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/o5keUKoczUnceEoG7"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 4,
+                      marginTop: 8, fontSize: 12, fontWeight: 600,
+                      color: 'var(--hostel-color)', textDecoration: 'none',
+                    }}
+                  >
+                    Get Directions ↗
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -299,7 +338,7 @@ export default function Hostel() {
         <p style={{ color: 'var(--green-light)' }}>
           Har admission season mein rooms jaldi bhar jaate hain. Abhi WhatsApp karo.
         </p>
-        <a href="https://wa.me/919999999999?text=I%20want%20to%20book%20a%20room%20at%20Vidya%20Boys%20Hostel" className="btn-primary">
+        <a href="https://wa.me/919999993069?text=I%20want%20to%20book%20a%20room%20at%20Vidya%20Boys%20Hostel" className="btn-primary">
           💬 Room Availability Check Karo
         </a>
       </section>

@@ -41,8 +41,8 @@ const TESTIMONIALS = [
 ];
 
 const CONTACT_ITEMS = [
-  ['📞', '+91 99999 99999',                    'Call to enquire any time'        ],
-  ['💬', 'WhatsApp: +91 99999 99999',          'Fastest way to subscribe'        ],
+  ['📞', '+91 99999 93069',                    'Call to enquire any time'        ],
+  ['💬', 'WhatsApp: +91 99999 93069',          'Fastest way to subscribe'        ],
   ['📍', '[Your mess address], Ghaziabad, UP', 'Same campus as Vidya Hostel'    ],
 ];
 
@@ -85,7 +85,7 @@ export default function Mess() {
           </div>
           <div className="hero-btns">
             <button className="btn-primary" onClick={scrollToPlans}>Plans aur Pricing Dekho ↓</button>
-            <a href="https://wa.me/919999999999?text=I%20want%20to%20know%20about%20Vidya%20Mess%20subscription" className="btn-outline">
+            <a href="https://wa.me/919999993069?text=I%20want%20to%20know%20about%20Vidya%20Mess%20subscription" className="btn-outline">
               💬 Abhi Subscribe Karo
             </a>
           </div>
@@ -151,7 +151,7 @@ export default function Mess() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999" style={{ display: 'block', background: 'var(--hostel-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>Already Included ✓</a>
+            <a href="https://wa.me/919999993069" style={{ display: 'block', background: 'var(--hostel-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>Already Included ✓</a>
           </div>
 
           {/* Monthly — popular */}
@@ -169,7 +169,7 @@ export default function Mess() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999?text=I%20want%20to%20subscribe%20to%20monthly%20mess%20plan" style={{ display: 'block', background: 'var(--mess-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>Subscribe Monthly</a>
+            <a href="https://wa.me/919999993069?text=I%20want%20to%20subscribe%20to%20monthly%20mess%20plan" style={{ display: 'block', background: 'var(--mess-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>Subscribe Monthly</a>
           </div>
 
           {/* Daily */}
@@ -186,7 +186,7 @@ export default function Mess() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999?text=I%20want%20to%20know%20daily%20meal%20rates%20at%20Vidya%20Mess" style={{ display: 'block', background: 'var(--mess-bg)', color: 'var(--mess-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--mess-color)' }}>Ask Daily Rates</a>
+            <a href="https://wa.me/919999993069?text=I%20want%20to%20know%20daily%20meal%20rates%20at%20Vidya%20Mess" style={{ display: 'block', background: 'var(--mess-bg)', color: 'var(--mess-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--mess-color)' }}>Ask Daily Rates</a>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function Mess() {
         <p style={{ color: 'var(--green-light)' }}>
           Kisi bhi meal time pe aao aur khud chakho. Hume yakeen hai aap subscribe karoge!
         </p>
-        <a href="https://wa.me/919999999999?text=I%20want%20to%20subscribe%20to%20Vidya%20Mess" className="btn-primary">
+        <a href="https://wa.me/919999993069?text=I%20want%20to%20subscribe%20to%20Vidya%20Mess" className="btn-primary">
           💬 WhatsApp pe Subscribe Karo
         </a>
       </section>

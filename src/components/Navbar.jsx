@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import VidyaLogo from './Logo';
 
 const NAV_ITEMS = [
-  { id: 'home',    label: 'Home' },
-  { id: 'solar',   label: '☀️ Solar' },
-  { id: 'hostel',  label: '🏠 Hostel' },
-  { id: 'mess',    label: '🍛 Mess' },
+  { id: 'home',    label: 'Home'       },
+  { id: 'solar',   label: '☀️ Solar'  },
+  { id: 'hostel',  label: '🏠 Hostel'  },
+  { id: 'mess',    label: '🍛 Mess'    },
   { id: 'library', label: '📚 Library' },
 ];
 
@@ -19,16 +20,18 @@ export default function Navbar({ activePage, setActivePage }) {
 
   return (
     <nav>
-      {/* Logo */}
+      {/* ── Logo ── */}
       <div className="nav-logo" onClick={() => go('home')}>
-        <div className="nav-logo-mark">🌿</div>
+        {/* Circle badge: green-dark→green-main gradient + gold ring + white SVG logo */}
+        <VidyaLogo size={44} variant="circle" />
+
         <div className="nav-logo-text">
           Vidya Groups
           <small>Ghaziabad, UP</small>
         </div>
       </div>
 
-      {/* Nav Links */}
+      {/* ── Nav Links ── */}
       <ul className={`nav-center${menuOpen ? ' open' : ''}`}>
         {NAV_ITEMS.map((item) => (
           <li key={item.id}>
@@ -42,7 +45,7 @@ export default function Navbar({ activePage, setActivePage }) {
         ))}
       </ul>
 
-      {/* Right side */}
+      {/* ── Right ── */}
       <div className="nav-right">
         <a href="tel:+919999999999" className="btn-call">
           📞 <span>Call Karo</span>

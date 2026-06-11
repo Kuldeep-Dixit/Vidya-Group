@@ -44,9 +44,10 @@ const TESTIMONIALS = [
 ];
 
 const CONTACT_ITEMS = [
-  ['📞', '+91 99999 99999',                     'Mon–Sat, 9am–7pm'                        ],
-  ['💬', 'WhatsApp: +91 99999 99999',           'Membership ke liye fastest way'           ],
-  ['📍', '[Library ka address], Ghaziabad, UP', 'Vidya Groups campus ke paas'             ],
+  ['📞', '+91 99998 93075',                     'Mon–Sat, 9am–7pm'                        ],
+  ['💬', 'WhatsApp: +91 99998 93075',           'Membership ke liye fastest way'           ],
+  ['📍', 'Behind Vidya Boys Hotel, Ghaziabad, UP', 'Vidya Groups campus ke paas'             ],
+  ['✉️', 'vidyalibrary2026@gmail.com',          '24 Ghante mein Reply'      ],
 ];
 
 const CONTACT_FIELDS = [
