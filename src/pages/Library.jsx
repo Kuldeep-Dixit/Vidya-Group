@@ -90,7 +90,7 @@ export default function Library() {
           </div>
           <div className="hero-btns">
             <button className="btn-primary" onClick={scrollToPlans}>Plans &amp; Fees Dekhein ↓</button>
-            <a href="https://wa.me/919999999999?text=Vidya%20Library%20membership%20ke%20baare%20mein%20jaanna%20hai" className="btn-outline">
+            <a href="https://wa.me/919999893075?text=Vidya%20Library%20membership%20ke%20baare%20mein%20jaanna%20hai" className="btn-outline">
               💬 Membership Lo
             </a>
           </div>
@@ -117,7 +117,7 @@ export default function Library() {
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>Monthly</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>1 Mahina · Flexible</p>
             <div style={{ marginBottom: 20 }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹X,XXX</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹1,199</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
@@ -125,7 +125,7 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999?text=Monthly%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
+            <a href="https://wa.me/919999893075?text=Monthly%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
               Monthly Membership Lo
             </a>
           </div>
@@ -137,10 +137,10 @@ export default function Library() {
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>3 Months</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>Exam ke liye Best Choice</p>
             <div style={{ marginBottom: 20 }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹X,XXX</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹2,699</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/3 months</span>
               <div style={{ background: 'var(--green-pale)', borderRadius: 20, padding: '3px 10px', display: 'inline-block', marginTop: 6 }}>
-                <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--green-mid)' }}>Save ₹XXX vs monthly</span>
+                <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--green-mid)' }}>Save ₹300 vs monthly</span>
               </div>
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
@@ -148,7 +148,7 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999?text=3%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>
+            <a href="https://wa.me/919999893075?text=3%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>
               3 Month Membership Lo
             </a>
           </div>
@@ -161,7 +161,7 @@ export default function Library() {
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>6 Months</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>Long-term · Maximum Savings</p>
             <div style={{ marginBottom: 20 }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹X,XXX</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹4,799</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/6 months</span>
               <div style={{ background: 'var(--green-pale)', borderRadius: 20, padding: '3px 10px', display: 'inline-block', marginTop: 6 }}>
                 <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--green-mid)' }}>Best deal — save maximum</span>
@@ -172,7 +172,7 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999999999?text=6%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
+            <a href="https://wa.me/919999893075?text=6%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
               6 Month Membership Lo
             </a>
           </div>
@@ -323,7 +323,7 @@ export default function Library() {
           Ek free visit karo, library dekho, aur decide karo. Koi pressure nahi!
         </p>
         <a
-          href="https://wa.me/919999999999?text=Vidya%20Library%20dekhne%20aana%20chahta%20hoon"
+          href="https://wa.me/919999893075?text=Vidya%20Library%20dekhne%20aana%20chahta%20hoon"
           className="btn-primary"
         >
           💬 Free Visit Book Karo
