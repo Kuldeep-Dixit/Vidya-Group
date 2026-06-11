@@ -79,7 +79,7 @@ export default function Home({ setActivePage }) {
         primaryLabel="Hamare Services Dekho ↓"
         onPrimary={scrollToServices}
         outlineLabel="💬 WhatsApp Karo"
-        outlineHref="https://wa.me/919999999999"
+        outlineHref="https://wa.me/919599309008"
         showSun
       />
 
