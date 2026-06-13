@@ -5,13 +5,22 @@ export default function SolarCalculator() {
   const [proptype,  setProptype]  = useState('residential');
   const [roofspace, setRoofspace] = useState('small');
   const [result,    setResult]    = useState(null);
+  const [error,     setError]     = useState('');
 
   const calculate = () => {
     const b = parseFloat(bill) || 0;
+
     if (b < 200) {
-      alert('Monthly electricity bill daalo (minimum ₹200)');
+      // Inline error instead of alert() — alert() is silently
+      // blocked inside many iframe / website-builder previews,
+      // which made the button look like it did nothing.
+      setError('Monthly electricity bill daalo (minimum ₹200)');
+      setResult(null);
       return;
     }
+
+    setError('');
+
     const kw      = Math.max(1, Math.round((b / 8) / 120));
     const saving  = Math.round(b * 0.8);
     const cost    = kw * 65000;
@@ -39,9 +48,15 @@ export default function SolarCalculator() {
             <input
               type="number"
               value={bill}
-              onChange={(e) => setBill(e.target.value)}
+              onChange={(e) => {
+                setBill(e.target.value);
+                if (error) setError('');
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') calculate();
+              }}
               placeholder="e.g. 2000"
-              min="500"
+              min="0"
             />
           </div>
           <div className="calc-field">
@@ -62,12 +77,29 @@ export default function SolarCalculator() {
           </select>
         </div>
 
-        <button className="btn-green" onClick={calculate}>
+        {/* Inline error message — replaces alert() */}
+        {error && (
+          <p style={{
+            color: '#c0392b',
+            fontSize: 13,
+            fontWeight: 600,
+            marginBottom: 14,
+            padding: '10px 14px',
+            background: '#fdecea',
+            border: '1px solid #f5c2bc',
+            borderRadius: 'var(--radius-sm)',
+          }}>
+            ⚠️ {error}
+          </p>
+        )}
+
+        <button type="button" className="btn-green" onClick={calculate}>
           Savings Calculate Karo →
         </button>
 
+
         {result && (
-          <div className="calc-result">
+          <div>
             <p className="calc-result-title">Aapke liye estimated solar plan:</p>
             <div className="calc-result-grid">
               <div className="calc-res-item">
@@ -88,7 +120,7 @@ export default function SolarCalculator() {
                 *Yeh rough estimate hai. Exact quote ke liye contact karo.
               </p>
               <a
-                href="https://wa.me/919999999999?text=I%20need%20a%20free%20solar%20quote"
+                href="https://wa.me/918178453197?text=I%20need%20a%20free%20solar%20quote"
                 className="btn-primary"
                 style={{ display: 'inline-flex', textDecoration: 'none' }}
               >

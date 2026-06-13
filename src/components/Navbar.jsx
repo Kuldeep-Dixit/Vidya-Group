@@ -47,7 +47,7 @@ export default function Navbar({ activePage, setActivePage }) {
 
       {/* ── Right ── */}
       <div className="nav-right">
-        <a href="tel:+919599309008" className="btn-call">
+        <a href="tel:+919999993069" className="btn-call">
           📞 <span>Call Karo</span>
         </a>
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

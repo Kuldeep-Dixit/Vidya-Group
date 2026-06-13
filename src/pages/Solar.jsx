@@ -27,9 +27,9 @@ const PROCESS = [
 ];
 
 const PRODUCTS = [
-  { icon: '☀️', h: 'Solar Panels',         p: 'Mono PERC & Bifacial. Waaree, Adani, Tata Solar.' },
-  { icon: '⚡', h: 'Inverters',             p: 'On-grid, off-grid & hybrid. Solis, Growatt, Havells.' },
-  { icon: '🔋', h: 'Batteries',             p: 'Li-ion & Lead Acid. Luminous, Exide, Amaron.'         },
+  { icon: '☀️', h: 'Solar Panels',         p: 'Mono PERC & Bifacial. UTL Fujiyama, Loom Solar, Tata Solar.' },
+  { icon: '⚡', h: 'Inverters',             p: 'On-grid, off-grid & hybrid. UTL Fujiyama, Loom Solar, Eastman.' },
+  { icon: '🔋', h: 'Batteries',             p: 'Li-ion & Lead Acid. Sukam, UTL, Eastman.'},
   { icon: '🔩', h: 'Mounting Structures',   p: 'GI & Aluminium. Wind & weather resistant.'             },
 ];
 
@@ -90,7 +90,7 @@ export default function Solar() {
               <button className="btn-primary" onClick={scrollToCalc}>
                 Apni Savings Calculate Karo ↓
               </button>
-              <a href="https://wa.me/919999999999" className="btn-outline">
+              <a href="https://wa.me/918178453197" className="btn-outline">
                 📞 Free Quote Lo
               </a>
             </div>
@@ -239,7 +239,7 @@ export default function Solar() {
           Is badi government scheme ka fayda uthao — limited time, abhi apply karo.
         </p>
         <a
-          href="https://wa.me/919999999999?text=I%20want%20to%20know%20about%20PM%20Surya%20Ghar%20subsidy"
+          href="https://wa.me/918178453197?text=I%20want%20to%20know%20about%20PM%20Surya%20Ghar%20subsidy"
           className="btn-primary"
         >
           💬 Subsidy ke Baare Mein Poochho

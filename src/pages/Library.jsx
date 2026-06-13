@@ -161,7 +161,7 @@ export default function Library() {
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>6 Months</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>Long-term · Maximum Savings</p>
             <div style={{ marginBottom: 20 }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹4,799</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: 'var(--library-color)' }}>₹4,999</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/6 months</span>
               <div style={{ background: 'var(--green-pale)', borderRadius: 20, padding: '3px 10px', display: 'inline-block', marginTop: 6 }}>
                 <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--green-mid)' }}>Best deal — save maximum</span>

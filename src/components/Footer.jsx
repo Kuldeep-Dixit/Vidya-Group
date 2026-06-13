@@ -94,8 +94,8 @@ export default function Footer({ setActivePage }) {
         <div className="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+919599309008">📞 +91 95993 09008</a></li>
-            <li><a href="https://wa.me/919599309008">💬 WhatsApp</a></li>
+            <li><a href="tel:+919999993069">📞 +91 99999 93069</a></li>
+            <li><a href="https://wa.me/919999993069">💬 WhatsApp</a></li>
             <li><a href="mailto:info@vidyagroups.in">✉️ info@vidyagroups.in</a></li>
           </ul>
         </div>

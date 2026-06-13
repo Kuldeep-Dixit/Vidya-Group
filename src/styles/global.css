@@ -208,8 +208,17 @@ nav {
 .calc-field select { width:100%; padding:11px 14px; border:1.5px solid var(--border); border-radius:var(--radius-sm); font-family:'DM Sans',sans-serif; font-size:14px; color:var(--text-dark); background:var(--off-white); outline:none; transition:border-color .2s; }
 .calc-field input:focus,
 .calc-field select:focus { border-color:var(--green-main); background:white; }
+
 .calc-grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-.calc-result { background:var(--green-pale); border:1px solid var(--border); border-radius:var(--radius-sm); padding:20px; margin-top:20px; }
+
+.calc-result { 
+  background:var(--green-pale); 
+  border:1px solid var(--border); 
+  border-radius:var(--radius-sm); 
+  padding:20px; 
+  margin-top:20px; 
+}
+
 .calc-result-title { font-size:13px; color:var(--text-muted); margin-bottom:14px; }
 .calc-result-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 .calc-res-item  { text-align:center; }

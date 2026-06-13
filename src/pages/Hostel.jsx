@@ -61,8 +61,11 @@ const CONTACT_FIELDS = [
   { name: 'query',   label: 'Any Questions? (optional)', type: 'textarea', placeholder: 'Ask anything about the hostel...' },
 ];
 
-const SINGLE_FEATURES = ['Furnished room (bed, table, chair, almirah)', 'High-speed WiFi', 'RO drinking water', 'Attached / common washroom', 'Laundry area access'];
-const DOUBLE_FEATURES = ['Furnished room (2 beds, 2 tables, almirah)',  'High-speed WiFi', 'RO drinking water', 'Common washroom',            'Laundry area access'];
+const SINGLE_FEATURES = ['Furnished room (bed, table, chair, almirah)', 
+  'High-speed WiFi', 'RO drinking water', 'Attached / common washroom', 
+  'Laundry area access', 'Library Access'];
+const DOUBLE_FEATURES = ['Furnished room (2 beds, 2 tables, almirah)',  'High-speed WiFi', 
+  'RO drinking water', 'Common washroom', 'Laundry area access', 'Library Access'];
 
 export default function Hostel() {
   const scrollToRooms = () =>
