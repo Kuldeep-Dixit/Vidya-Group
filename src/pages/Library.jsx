@@ -4,7 +4,7 @@ import ContactForm     from '../components/ContactForm';
 
 const LIB_STATS = [
   { num: '50+',  label: 'Seats Available'    },
-  { num: '12+',  label: 'Hours Open Daily'   },
+  { num: '24×7', label: 'Open Always'        },
   { num: '6+',   label: 'Years Running'      },
   { num: '100%', label: 'Quiet Environment'  },
 ];
@@ -34,7 +34,7 @@ const RULES = [
   ['🪑', 'Apni Seat Maintain Karo',    'Doosron ki seat pe mat baithna — respect each other'       ],
   ['🧹', 'Saafai Rakho',               'Khana-peena allowed nahi hall ke andar'                    ],
   ['🪪', 'ID Card Zaroori',            'Har baar entry pe membership card dikhana hoga'            ],
-  ['⏰', 'Time Pe Aao, Time Pe Jao',   'Closing time ke baad ruka nahi ja sakta'                   ],
+  ['⏰', '24×7 Access',                'Apni membership ID se kabhi bhi aao, kabhi bhi jao'        ],
 ];
 
 const TESTIMONIALS = [
@@ -44,7 +44,7 @@ const TESTIMONIALS = [
 ];
 
 const CONTACT_ITEMS = [
-  ['📞', '+91 99998 93075',                     'Mon–Sat, 9am–7pm'                        ],
+  ['📞', '+91 99998 93075',                     'Available 24×7'                          ],
   ['💬', 'WhatsApp: +91 99998 93075',           'Membership ke liye fastest way'           ],
   ['📍', 'Behind Vidya Boys Hotel, Ghaziabad, UP', 'Vidya Groups campus ke paas'             ],
   ['✉️', 'vidyalibrary2026@gmail.com',          '24 Ghante mein Reply'      ],
@@ -69,7 +69,7 @@ export default function Library() {
         <div style={{ position: 'absolute', inset: 0, opacity: .06, background: 'radial-gradient(ellipse at 25% 60%,#74c69d 0%,transparent 55%),radial-gradient(ellipse at 75% 20%,#40916c 0%,transparent 45%)' }} />
         <div style={{ position: 'absolute', right: '6%', top: '50%', transform: 'translateY(-50%)', fontSize: 'min(200px,25vw)', opacity: .04, lineHeight: 1, pointerEvents: 'none' }}>📚</div>
         <div style={{ position: 'relative', zIndex: 2, maxWidth: 620, animation: 'fadeUp .75s ease both' }}>
-          <div className="hero-badge" style={{ marginBottom: 16 }}>📚 Sabke Liye Open · Study Room</div>
+          <div className="hero-badge" style={{ marginBottom: 16 }}>📚 24×7 Open · Study Room</div>
           <div className="biz-logo logo-library" style={{ marginBottom: 18 }}>
             <div className="biz-logo-mark" style={{ width: 42, height: 42, fontSize: 22, background: 'var(--library-bg)' }}>📚</div>
             <div className="biz-logo-name" style={{ color: '#c4b5fd', fontSize: 19 }}>
@@ -81,10 +81,10 @@ export default function Library() {
           </h1>
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.62)', lineHeight: 1.75, marginBottom: 28, maxWidth: 500 }}>
             Apni books laao, hamari library mein best environment mein padho. Students, UPSC/SSC aspirants,
-            professionals — sabka swagat hai. Distraction-free, quiet, aur fully equipped study space.
+            professionals — sabka swagat hai. Distraction-free, quiet, aur 24×7 open study space.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-            {['✓ Distraction-Free Zone','✓ High-Speed WiFi','✓ 24×7 Power Backup','✓ AC Study Hall','✓ Sabke Liye Open'].map((b) => (
+            {['✓ 24×7 Open','✓ High-Speed WiFi','✓ 24×7 Power Backup','✓ AC Study Hall','✓ Sabke Liye Open'].map((b) => (
               <span key={b} className="solar-badge">{b}</span>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function Library() {
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
-              {['Full day access','Dedicated seat','WiFi included','Locker facility'].map((f) => (
+              {['24×7 access','Dedicated seat','WiFi included','Locker facility'].map((f) => (
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
@@ -144,7 +144,7 @@ export default function Library() {
               </div>
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
-              {['Full day access','Dedicated seat','WiFi included','Locker facility','Better savings'].map((f) => (
+              {['24×7 access','Dedicated seat','WiFi included','Locker facility','Better savings'].map((f) => (
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
@@ -168,7 +168,7 @@ export default function Library() {
               </div>
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
-              {['Full day access','Dedicated seat','WiFi included','Locker facility','Maximum savings'].map((f) => (
+              {['24×7 access','Dedicated seat','WiFi included','Locker facility','Maximum savings'].map((f) => (
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
@@ -196,31 +196,31 @@ export default function Library() {
         </div>
       </section>
 
-      {/* ── Timings ── */}
+      {/* ── Timings — 24×7 ── */}
       <section className="section">
         <div className="section-header">
           <span className="section-tag">Library Timings</span>
-          <h2>Hum Kab Open Hain</h2>
-          <p>Early risers se late-night studiers tak — sabke liye suitable hours.</p>
+          <h2>Hum 24×7 Open Hain</h2>
+          <p>Kabhi bhi aao — subah, dopahar, raat ya midnight. Library hamesha khuli hai.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20, maxWidth: 700, margin: '0 auto' }}>
-          <div style={{ background: 'var(--white)', border: '2px solid var(--library-color)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center' }}>
-            <div style={{ fontSize: 36, marginBottom: 12 }}>📅</div>
-            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 17, color: 'var(--library-dark)', marginBottom: 10 }}>Monday – Saturday</h3>
-            <p style={{ fontSize: 26, fontWeight: 700, color: 'var(--library-color)', marginBottom: 6 }}>6:00 AM – 10:00 PM</p>
-            <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>16 ghante open · Peak study hours covered</p>
-          </div>
-          <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center' }}>
-            <div style={{ fontSize: 36, marginBottom: 12 }}>🌟</div>
-            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 17, color: 'var(--library-dark)', marginBottom: 10 }}>Sunday</h3>
-            <p style={{ fontSize: 26, fontWeight: 700, color: 'var(--library-color)', marginBottom: 6 }}>8:00 AM – 8:00 PM</p>
-            <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>Exam season mein extended hours possible</p>
+        <div style={{ maxWidth: 700, margin: '0 auto' }}>
+          <div style={{ background: 'var(--white)', border: '2px solid var(--library-color)', borderRadius: 'var(--radius)', padding: 36, textAlign: 'center' }}>
+            <div style={{ fontSize: 44, marginBottom: 12 }}>🌙☀️</div>
+            <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, color: 'var(--library-dark)', marginBottom: 10 }}>
+              Open All Days · All Hours
+            </h3>
+            <p style={{ fontSize: 30, fontWeight: 700, color: 'var(--library-color)', marginBottom: 8 }}>
+              24 Hours × 7 Days
+            </p>
+            <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+              Monday se Sunday — kabhi bhi aao, kabhi bhi jao. Apni membership ID se entry, koi fixed timing nahi.
+            </p>
           </div>
         </div>
         <div style={{ maxWidth: 700, margin: '16px auto 0', background: 'var(--library-bg)', border: '1px solid #c4b5fd', borderRadius: 'var(--radius-sm)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 12 }}>
           <span style={{ fontSize: 20 }}>💡</span>
           <p style={{ fontSize: 13, color: 'var(--library-dark)' }}>
-            Exam season mein extended hours ya Sunday special batches ke liye WhatsApp karo — hum flexible hain!
+            Raat ko padhna pasand hai? Subah jaldi shuru karna hai? Vidya Library 24×7 khuli hai — apne hisaab se schedule banao!
           </p>
         </div>
       </section>
@@ -311,14 +311,14 @@ export default function Library() {
             fields={CONTACT_FIELDS}
             submitLabel="Membership Enquiry Bhejo →"
             submitStyle={{ background: 'var(--library-color)' }}
-            onSubmit={() => alert('Shukriya! Hum jald aapse contact karenge. 📚\nYa seedha WhatsApp karo: +91 99999 99999')}
+            onSubmit={() => alert('Shukriya! Hum jald aapse contact karenge. 📚\nYa seedha WhatsApp karo: +91 99998 93075')}
           />
         </div>
       </section>
 
       {/* ── CTA ── */}
       <section className="cta-banner">
-        <h2>Seats Limited Hain — Aaj Hi Aao!</h2>
+        <h2>24×7 Open — Jab Chaho Aao!</h2>
         <p style={{ color: 'var(--green-light)' }}>
           Ek free visit karo, library dekho, aur decide karo. Koi pressure nahi!
         </p>
