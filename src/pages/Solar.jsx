@@ -227,7 +227,7 @@ export default function Solar() {
           <ContactForm
             fields={CONTACT_FIELDS}
             submitLabel="Free Consultation Book Karo →"
-            onSubmit={() => alert('Shukriya! Hamari team 24 ghante mein contact karegi. 🙏')}
+            onSubmit={() => alert('Shukriya! Hamari team 24 ghante mein contact karegi. 🏠\nWhatsApp: +91 81784 53197')}
           />
         </div>
       </section>

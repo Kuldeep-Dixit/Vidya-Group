@@ -330,7 +330,7 @@ export default function Hostel() {
           <ContactForm
             fields={CONTACT_FIELDS}
             submitLabel="Admission Enquiry Bhejo →"
-            onSubmit={() => alert('Shukriya! Hum jald contact karenge. 🏠\nWhatsApp: +91 99999 99999')}
+            onSubmit={() => alert('Shukriya! Hum jald contact karenge. 🏠\nWhatsApp: +91 99999 93069')}
           />
         </div>
       </section>
