@@ -6,7 +6,7 @@
  *  message {string} – optional pre-filled message
  */
 export default function WhatsAppFloat({
-  phone   = '919999999999',
+  phone   = '919999993069',
   message = '',
 }) {
   const href = message

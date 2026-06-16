@@ -135,7 +135,7 @@ export default function Mess() {
           <h2>Simple, Honest Pricing</h2>
           <p>Koi hidden charges nahi. Jo khao uska pay karo.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 900, margin: '0 auto' }}>
+        <div className="grid-3" style={{ maxWidth: 900 }}>
 
           {/* Hostel included */}
           <div style={{ background: 'var(--hostel-bg)', border: '2px solid var(--hostel-color)', borderRadius: 'var(--radius)', padding: 28, position: 'relative', textAlign: 'center' }}>
@@ -162,7 +162,6 @@ export default function Mess() {
             <div style={{ margin: '16px 0' }}>
               <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹3,999</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/month</span>
-              {/* <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p> */}
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
               {['Breakfast + Lunch + Dinner','All 7 days of the week','Sunday special meal','Best value for regulars'].map((f) => (
@@ -179,7 +178,6 @@ export default function Mess() {
             <div style={{ margin: '16px 0' }}>
               <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 36, fontWeight: 700, color: 'var(--mess-color)' }}>₹79</span>
               <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>/meal</span>
-              {/* <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>*Update with actual price</p> */}
             </div>
             <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: 20 }}>
               {['Pay per meal — no commitment','Choose any meal of the day','Walk-in welcome','Great for occasional visitors'].map((f) => (
@@ -197,7 +195,7 @@ export default function Mess() {
           <span className="section-tag">Kyun Vidya Mess?</span>
           <h2>Khana Jo Ghar Jaisa Lage</h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16, maxWidth: 900, margin: '0 auto' }}>
+        <div className="services-grid">
           {WHY_MESS.map(([icon, h, p]) => (
             <div key={h} className="service-card"><span className="service-icon">{icon}</span><h3>{h}</h3><p>{p}</p></div>
           ))}
@@ -210,7 +208,7 @@ export default function Mess() {
           <span className="section-tag">Meal Timings</span>
           <h2>Hum Kab Khilate Hain?</h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 800, margin: '0 auto' }}>
+        <div className="grid-3" style={{ maxWidth: 800 }}>
           {MEAL_TIMES.map((m) => (
             <div key={m.label} style={{ background: 'var(--white)', border: m.highlight ? '2px solid var(--mess-color)' : '1px solid var(--border)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center' }}>
               <div style={{ fontSize: 40, marginBottom: 12 }}>{m.icon}</div>

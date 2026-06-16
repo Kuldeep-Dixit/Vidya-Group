@@ -65,10 +65,10 @@ export default function Library() {
   return (
     <div>
       {/* ── Hero ── */}
-      <section style={{ background: 'var(--green-dark)', padding: '80px 5% 60px', position: 'relative', overflow: 'hidden', minHeight: '68vh', display: 'flex', alignItems: 'center' }}>
+      <section className="lib-hero">
         <div style={{ position: 'absolute', inset: 0, opacity: .06, background: 'radial-gradient(ellipse at 25% 60%,#74c69d 0%,transparent 55%),radial-gradient(ellipse at 75% 20%,#40916c 0%,transparent 45%)' }} />
-        <div style={{ position: 'absolute', right: '6%', top: '50%', transform: 'translateY(-50%)', fontSize: 'min(200px,25vw)', opacity: .04, lineHeight: 1, pointerEvents: 'none' }}>📚</div>
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: 620, animation: 'fadeUp .75s ease both' }}>
+        <div className="lib-hero-decor">📚</div>
+        <div className="lib-hero-content">
           <div className="hero-badge" style={{ marginBottom: 16 }}>📚 24×7 Open · Study Room</div>
           <div className="biz-logo logo-library" style={{ marginBottom: 18 }}>
             <div className="biz-logo-mark" style={{ width: 42, height: 42, fontSize: 22, background: 'var(--library-bg)' }}>📚</div>
@@ -76,7 +76,7 @@ export default function Library() {
               Vidya Library<small style={{ color: 'rgba(255,255,255,0.4)' }}>Ghaziabad, UP</small>
             </div>
           </div>
-          <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: 'clamp(2rem,4.5vw,3.2rem)', fontWeight: 900, color: 'white', lineHeight: 1.12, marginBottom: 12 }}>
+          <h1 className="lib-hero-title">
             Padhai Ka <em style={{ fontStyle: 'normal', color: '#a78bfa' }}>Perfect Maahol</em>
           </h1>
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.62)', lineHeight: 1.75, marginBottom: 28, maxWidth: 500 }}>
@@ -107,12 +107,10 @@ export default function Library() {
           <h2>Apna Plan Chunein</h2>
           <p>Jitne time ke liye chahiye — ek, teen, ya chhe mahine. Jyada time, utna better deal.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 860, margin: '0 auto' }}>
+        <div className="lib-plans-grid">
 
           {/* Monthly */}
-          <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center', transition: 'transform .2s,box-shadow .2s' }}
-            onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = 'var(--shadow-md)'; }}
-            onMouseOut={(e)  => { e.currentTarget.style.transform = '';                 e.currentTarget.style.boxShadow = '';              }}>
+          <div className="lib-plan-card">
             <div style={{ fontSize: 36, marginBottom: 12 }}>📅</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>Monthly</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>1 Mahina · Flexible</p>
@@ -125,14 +123,14 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999893075?text=Monthly%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
+            <a href="https://wa.me/919999893075?text=Monthly%20library%20membership%20chahiye" className="lib-plan-btn lib-plan-btn--outline">
               Monthly Membership Lo
             </a>
           </div>
 
           {/* 3 Months — popular */}
-          <div style={{ background: 'var(--white)', border: '2px solid var(--library-color)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center', position: 'relative', boxShadow: 'var(--shadow-md)', transform: 'translateY(-4px)' }}>
-            <div style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: 'var(--library-color)', color: 'white', fontSize: 11, fontWeight: 700, padding: '4px 14px', borderRadius: 20, whiteSpace: 'nowrap' }}>⭐ MOST POPULAR</div>
+          <div className="lib-plan-card lib-plan-card--popular">
+            <div className="lib-plan-badge">⭐ MOST POPULAR</div>
             <div style={{ fontSize: 36, marginBottom: 12, marginTop: 8 }}>🎯</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>3 Months</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>Exam ke liye Best Choice</p>
@@ -148,15 +146,13 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999893075?text=3%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-color)', color: 'white', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13 }}>
+            <a href="https://wa.me/919999893075?text=3%20month%20library%20membership%20chahiye" className="lib-plan-btn lib-plan-btn--solid">
               3 Month Membership Lo
             </a>
           </div>
 
           {/* 6 Months */}
-          <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: 28, textAlign: 'center', transition: 'transform .2s,box-shadow .2s' }}
-            onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = 'var(--shadow-md)'; }}
-            onMouseOut={(e)  => { e.currentTarget.style.transform = '';                 e.currentTarget.style.boxShadow = '';              }}>
+          <div className="lib-plan-card">
             <div style={{ fontSize: 36, marginBottom: 12 }}>🏆</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 700, color: 'var(--text-dark)', marginBottom: 6 }}>6 Months</h3>
             <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>Long-term · Maximum Savings</p>
@@ -172,7 +168,7 @@ export default function Library() {
                 <li key={f} style={{ fontSize: 13, color: 'var(--text-mid)', padding: '5px 0', borderBottom: '1px solid var(--border)' }}>✅ {f}</li>
               ))}
             </ul>
-            <a href="https://wa.me/919999893075?text=6%20month%20library%20membership%20chahiye" style={{ display: 'block', background: 'var(--library-bg)', color: 'var(--library-dark)', textAlign: 'center', padding: 11, borderRadius: 40, textDecoration: 'none', fontWeight: 600, fontSize: 13, border: '2px solid var(--library-color)' }}>
+            <a href="https://wa.me/919999893075?text=6%20month%20library%20membership%20chahiye" className="lib-plan-btn lib-plan-btn--outline">
               6 Month Membership Lo
             </a>
           </div>
@@ -189,7 +185,7 @@ export default function Library() {
           <h2>Sab Kuch Jo Padhai Ke Liye Chahiye</h2>
           <p>Hum environment perfect rakhte hain taaki aap sirf padhai pe focus karo.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16, maxWidth: 900, margin: '0 auto' }}>
+        <div className="services-grid">
           {FACILITIES.map(([icon, h, p]) => (
             <div key={h} className="service-card"><span className="service-icon">{icon}</span><h3>{h}</h3><p>{p}</p></div>
           ))}
@@ -204,7 +200,7 @@ export default function Library() {
           <p>Kabhi bhi aao — subah, dopahar, raat ya midnight. Library hamesha khuli hai.</p>
         </div>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
-          <div style={{ background: 'var(--white)', border: '2px solid var(--library-color)', borderRadius: 'var(--radius)', padding: 36, textAlign: 'center' }}>
+          <div className="lib-timing-card">
             <div style={{ fontSize: 44, marginBottom: 12 }}>🌙☀️</div>
             <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, color: 'var(--library-dark)', marginBottom: 10 }}>
               Open All Days · All Hours
@@ -217,8 +213,8 @@ export default function Library() {
             </p>
           </div>
         </div>
-        <div style={{ maxWidth: 700, margin: '16px auto 0', background: 'var(--library-bg)', border: '1px solid #c4b5fd', borderRadius: 'var(--radius-sm)', padding: '14px 20px', display: 'flex', alignItems: 'center', gap: 12 }}>
-          <span style={{ fontSize: 20 }}>💡</span>
+        <div className="lib-tip-banner">
+          <span style={{ fontSize: 20, flexShrink: 0 }}>💡</span>
           <p style={{ fontSize: 13, color: 'var(--library-dark)' }}>
             Raat ko padhna pasand hai? Subah jaldi shuru karna hai? Vidya Library 24×7 khuli hai — apne hisaab se schedule banao!
           </p>
@@ -232,13 +228,9 @@ export default function Library() {
           <h2>Sabke Liye Suitable</h2>
           <p>Chahe koi bhi ho — Vidya Library mein sabka swagat hai.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, maxWidth: 900, margin: '0 auto' }}>
+        <div className="lib-who-grid">
           {WHO_STUDIES.map(([icon, h, p]) => (
-            <div key={h}
-              style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '22px 16px', textAlign: 'center', transition: 'transform .2s' }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
-              onMouseOut={(e)  => e.currentTarget.style.transform = ''}
-            >
+            <div key={h} className="lib-who-card">
               <div style={{ fontSize: 36, marginBottom: 10 }}>{icon}</div>
               <h4 style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-dark)', marginBottom: 6 }}>{h}</h4>
               <p style={{ fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.5 }}>{p}</p>
@@ -254,9 +246,9 @@ export default function Library() {
           <h2>Discipline Hi Safalta Ki Kunji Hai</h2>
           <p>Simple rules jo library ka environment sabke liye pleasant rakhte hain.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 12, maxWidth: 800, margin: '0 auto' }}>
+        <div className="lib-rules-grid">
           {RULES.map(([icon, h, p]) => (
-            <div key={h} style={{ display: 'flex', gap: 12, padding: '14px 16px', background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', alignItems: 'flex-start' }}>
+            <div key={h} className="lib-rule-card">
               <span style={{ fontSize: 18, flexShrink: 0 }}>{icon}</span>
               <div>
                 <p style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-dark)' }}>{h}</p>

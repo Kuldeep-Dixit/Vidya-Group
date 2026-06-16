@@ -61,10 +61,10 @@ const CONTACT_FIELDS = [
   { name: 'query',   label: 'Any Questions? (optional)', type: 'textarea', placeholder: 'Ask anything about the hostel...' },
 ];
 
-const SINGLE_FEATURES = ['Furnished room (bed, table, chair, almirah)', 
-  'High-speed WiFi', 'RO drinking water', 'Attached / common washroom', 
+const SINGLE_FEATURES = ['Furnished room (bed, table, chair, almirah)',
+  'High-speed WiFi', 'RO drinking water', 'Attached / common washroom',
   'Laundry area access', 'Library Access'];
-const DOUBLE_FEATURES = ['Furnished room (2 beds, 2 tables, almirah)',  'High-speed WiFi', 
+const DOUBLE_FEATURES = ['Furnished room (2 beds, 2 tables, almirah)',  'High-speed WiFi',
   'RO drinking water', 'Common washroom', 'Laundry area access', 'Library Access'];
 
 export default function Hostel() {
@@ -121,7 +121,7 @@ export default function Hostel() {
           <h2>Apna Room Chuno</h2>
           <p>Dono room types fully furnished hain, sab basic amenities ke saath.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 24, maxWidth: 820, margin: '0 auto' }}>
+        <div className="grid-2" style={{ maxWidth: 820 }}>
           {/* Single */}
           <div style={{ background: 'var(--white)', border: '2px solid var(--hostel-color)', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
             <div style={{ background: 'var(--hostel-color)', padding: '20px 24px', color: 'white' }}>
@@ -182,7 +182,7 @@ export default function Hostel() {
           <h2>Jo Bhi Chahiye</h2>
           <p>Humne ensure kiya hai ki students ke paas sab kuch ho taki wo studies pe focus kar sakein.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16, maxWidth: 900, margin: '0 auto' }}>
+        <div className="services-grid">
           {FACILITIES.map(([icon, h, p]) => (
             <div key={h} className="service-card">
               <span className="service-icon">{icon}</span>
@@ -200,7 +200,7 @@ export default function Hostel() {
           <h2>Perfect Location pe</h2>
           <p>Ek student ko jo chahiye — sab kuch doorstep pe.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, maxWidth: 860, margin: '0 auto', alignItems: 'start' }}>
+        <div className="grid-2" style={{ maxWidth: 860, alignItems: 'start' }}>
 
           {/* ── Map card ── */}
           <div>
@@ -279,7 +279,7 @@ export default function Hostel() {
           <h2>Safe aur Disciplined Environment</h2>
           <p>Simple rules jo hostel ko sabke liye safe aur comfortable banate hain.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 14, maxWidth: 800, margin: '0 auto' }}>
+        <div className="grid-2" style={{ maxWidth: 800, gap: 14 }}>
           {RULES.map(([icon, h, p]) => (
             <div key={h} style={{ display: 'flex', gap: 12, padding: '14px 16px', background: 'var(--white)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)', alignItems: 'flex-start' }}>
               <span style={{ fontSize: 18, flexShrink: 0 }}>{icon}</span>
